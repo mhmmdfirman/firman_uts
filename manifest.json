@@ -1,0 +1,17 @@
+{
+    "name": "Toko VMN",
+    "short_name": "VMN",
+    "description": "Aplikasi toko online Toko VMN",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#e44d26",
+    "theme_color": "#e44d26",
+    "icons": [
+      {
+        "src": "/icon.png",
+        "sizes": "192x192",
+        "type": "d:/semester5/utspapk/Biru Oranye Ilustratif Minimalis Grosir dan Sembako Logo.png"
+      }
+    ]
+  }
+  

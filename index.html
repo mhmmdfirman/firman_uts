@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko VMN</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- PWA: Tambahkan meta untuk menentukan nama aplikasi dan ikon -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#e44d26">
+  <link rel="icon" type="image/png" href="/icon.png" sizes="192x192">
+
+  <!-- PWA: Tambahkan tag ini untuk mengaktifkan mode layar penuh -->
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Toko VMN</h1>
+    </div>
+  </header>
+
+  <section id="products">
+    <div class="container">
+      <div class="product">
+        <img src="d:\semester5\uts_firman\download (1).jpg" alt="Beras icon" class="product-icon">
+        <h3>Beras</h3>
+        <p class="price">Rp. 12,000</p>
+        <button onclick="addToCart(1)">Tambah ke Keranjang</button>
+      </div>
+
+      <div class="product">
+        <img src="d:\semester5\uts_firman\garam.jpg" alt="Garam" class="product-icon">
+        <h3>Garam</h3>
+        <p class="price">Rp. 5,000</p>
+        <button onclick="addToCart(2)">Tambah ke Keranjang</button>
+      </div>
+
+      <div class="product">
+        <img src="d:\semester5\uts_firman\tropical.jpg" alt="Minyak Goreng Icon" class="product-icon">
+        <h3>Minyak tropical</h3>
+        <p class="price">Rp. 17,000</p>
+        <button onclick="addToCart(3)">Tambah ke Keranjang</button>
+      </div>
+
+      <div class="product">
+        <img src="d:\semester5\uts_firman\gulaku.jpg" alt="Gualaku" class="product-icon">
+        <h3>Gula Pasir</h3>
+        <p class="price">Rp. 8,000</p>
+        <button onclick="addToCart(4)">Tambah ke Keranjang</button>
+      </div>
+
+      <div class="product">
+        <img src="d:\semester5\uts_firman\tepung terigu.jpg" alt="Tepung terigu" class="product-icon">
+        <h3>Tepung Terigu</h3>
+        <p class="price">Rp. 12,000</p>
+        <button onclick="addToCart(5)">Tambah ke Keranjang</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="cart">
+    <div class="container">
+      <h2>Keranjang Belanja</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: <span id="total">Rp. 0</span></p>
+      <button onclick="checkout()">Checkout</button>
+      <button onclick="editProduct()">Edit</button>
+      <button onclick="deleteproduct()">Hapus</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
